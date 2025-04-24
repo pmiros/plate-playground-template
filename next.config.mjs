@@ -1,14 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        destination: '/editor',
-        permanent: false,
-        source: '/',
-      },
-    ];
-  },
+  output: 'export',
+  assetPrefix: '/pavel/out/',
 };
 
 export default nextConfig;
